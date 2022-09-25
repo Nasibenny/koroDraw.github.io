@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('doodl.jpg');
+    background-size: contain;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+canvas {
+
+    border: 2px solid steelblue;
+    background-color: whitesmoke;
+}
+
+.tool-box {
+    background-color: steelblue;
+    border: 1px solid steelblue;
+    display: flex;
+    width: 804px;
+    padding: 1rem;
+}
+
+.tool-box>* {
+    background-color: white;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    padding: 0.25px;
+    cursor: pointer;
+
+}
+
+.tool-box>*:last-child {
+    margin-left: auto;
+}
